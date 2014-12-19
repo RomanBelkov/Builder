@@ -19,7 +19,7 @@ if %checkFailure%==true (
   set emailSubject=%emailSubject%
 )  
 
-%BlatPath%\blat.exe -s "%emailSubject%" -body "%emailBody%" -to %mailTO% -attacht %emailFile%
+%BlatPath%\blat.exe -s "%emailSubject%" -body "%emailBody%" -to %mailTO% -attacht %emailFile% -attacht %testsOutput%
 
 if errorlevel 1 goto :error
 
