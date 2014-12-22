@@ -15,6 +15,7 @@ call %folder%\build.bat
 if "%buildFailure%"=="true" goto :end
 
 call %folder%\buildCheck.bat
+if %checkFailure% == "true" goto :end
 
 call %folder%\tests.bat
 

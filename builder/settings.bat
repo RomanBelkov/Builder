@@ -20,6 +20,7 @@ set MSBuildLog=msbuild.log
 set cloneFailure=false
 set buildFailure=false
 set checkFailure=false
+set testsFailure=false
 
 set fileList=%folder%\files.txt
 set missingFile=
